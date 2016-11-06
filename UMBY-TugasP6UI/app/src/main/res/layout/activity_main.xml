@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/RelativeLayout01"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:text="@string/labelNim"
+                            android:id="@+id/label_nim"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtNim"
+                            android:ems="10"
+                            android:id="@+id/txt_nim"
+                            android:hint="input NIM"
+                            android:layout_below="@+id/label_nim"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:text="@string/labelNama"
+                            android:id="@+id/label_nama"
+                            android:layout_below="@+id/txt_nim"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentStart="true" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:text="@string/txtNama"
+                            android:ems="10"
+                            android:id="@+id/txt_nama"
+                            android:hint="input Nama"
+                            android:layout_below="@+id/label_nama"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:text="@string/labelJk"
+                            android:id="@+id/label_jk"
+                            android:layout_below="@+id/txt_nama"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentStart="true" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radioGroupJk"
+                            android:id="@+id/gender"
+                            android:layout_below="@+id/label_jk"
+                            android:orientation="horizontal"
+                            android:layout_alignParentStart="true">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/lk"
+                                    android:id="@+id/jkLk" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pr"
+                                    android:id="@+id/jkPr"
+                                    android:layout_below="@+id/jkLk" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal|bold"
+                            android:textColor="#000000"
+                            android:text="@string/labelAgama"
+                            android:id="@+id/label_agama"
+                            android:layout_below="@+id/gender"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentStart="true" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/optAgama"
+                            android:id="@+id/optAgama"
+                            android:layout_below="@+id/label_agama"
+                            android:layout_alignParentEnd="true" />
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.65">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="normal|bold"
+                                    android:textColor="#000000"
+                                    android:text="@string/labelHobi"
+                                    android:id="@+id/label_hobi"
+                                    android:layout_marginTop="10dp" />
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cbHobi1"
+                                    android:id="@+id/cb_hobi_1"
+                                    android:layout_row="1"
+                                    android:layout_column="0" />
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cbHobi2"
+                                    android:id="@+id/cb_hobi_2"
+                                    android:layout_row="2"
+                                    android:layout_column="0" />
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cbHobi3"
+                                    android:id="@+id/cb_hobi_3"
+                                    android:layout_columnSpan="2"
+                                    android:layout_row="1"
+                                    android:layout_column="1" />
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cbHobi4"
+                                    android:id="@+id/cb_hobi_4"
+                                    android:layout_columnSpan="2"
+                                    android:layout_row="2"
+                                    android:layout_column="1" />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/btnView"
+                                    android:id="@+id/btn_view"
+                                    android:layout_row="3"
+                                    android:layout_column="1" />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/btnExit"
+                                    android:id="@+id/btn_exit"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_row="3"
+                                    android:layout_column="2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="normal|bold"
+                                    android:textColor="#000000"
+                                    android:text="@string/labelHasil"
+                                    android:id="@+id/label_hasil"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_row="4"
+                                    android:layout_column="0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/hasilNim"
+                                    android:id="@+id/hasil_nim"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="5"
+                                    android:layout_column="0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/txtHasilNim"
+                                    android:id="@+id/txt_hasil_nim"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="5"
+                                    android:layout_column="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/hasilNama"
+                                    android:id="@+id/hasil_nama"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="6"
+                                    android:layout_column="0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/txtHasilNama"
+                                    android:id="@+id/txt_hasil_nama"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="6"
+                                    android:layout_column="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/hasilJk"
+                                    android:id="@+id/hasil_jk"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="7"
+                                    android:layout_column="0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/txtHasilJk"
+                                    android:id="@+id/txt_hasil_jk"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="7"
+                                    android:layout_column="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/hasilAgama"
+                                    android:id="@+id/hasil_agama"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="8"
+                                    android:layout_column="0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/txtHasilAgama"
+                                    android:id="@+id/txt_hasil_agama"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="8"
+                                    android:layout_column="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/hasilHobi"
+                                    android:id="@+id/hasil_hobi"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="9"
+                                    android:layout_column="0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/txtHasilHobi"
+                                    android:id="@+id/txt_hasil_hobi"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_row="9"
+                                    android:layout_column="1" />
+
+                        </GridLayout>
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+</ScrollView>

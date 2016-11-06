@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">UMBY - Tugas P6 UI</string>
+    <string name="labelNim">NIM</string>
+    <string name="txtNim"></string>
+    <string name="labelNama">Nama</string>
+    <string name="txtNama"></string>
+    <string name="labelJk">Kelamin</string>
+    <string name="radioGroupJk"></string>
+    <string name="lk">Laki - laki</string>
+    <string name="pr">Perempuan</string>
+    <string name="labelAgama">Agama</string>
+    <string name="optAgama"></string>
+    <string name="labelHobi">Hobi</string>
+    <string name="cbHobi1">Coding</string>
+    <string name="cbHobi2">Browsing</string>
+    <string name="cbHobi3">Tidur</string>
+    <string name="cbHobi4">Jalan - jalan</string>
+    <string name="btnView">View</string>
+    <string name="btnExit">Exit</string>
+    <string name="labelHasil">Hasilya :</string>
+    <string name="hasilNim">NIM</string>
+    <string name="txtHasilNim"></string>
+    <string name="hasilNama">Nama</string>
+    <string name="txtHasilNama"></string>
+    <string name="hasilJk">Kelamin</string>
+    <string name="txtHasilJk"></string>
+    <string name="hasilAgama">Agama</string>
+    <string name="txtHasilAgama"></string>
+    <string name="hasilHobi">Hobi</string>
+    <string name="txtHasilHobi"></string>
+</resources>
